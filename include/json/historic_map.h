@@ -334,7 +334,7 @@ template <class Key,
     class Value,
     class Compare = std::less<Key>
 >
-auto begin(const historic_map<Key, Value, Compare>& hm)
+typename historic_map<Key, Value, Compare>::const_iterator begin(const historic_map<Key, Value, Compare>& hm)
 {
     return hm.begin();
 }
@@ -342,7 +342,7 @@ template <class Key,
     class Value,
     class Compare = std::less<Key>
 >
-auto cbegin(const historic_map<Key, Value, Compare>& hm)
+typename historic_map<Key, Value, Compare>::const_iterator cbegin(const historic_map<Key, Value, Compare>& hm)
 {
     return hm.cbegin();
 }
@@ -350,7 +350,7 @@ template <class Key,
     class Value,
     class Compare = std::less<Key>
 >
-auto begin(historic_map<Key, Value, Compare>& hm)
+typename historic_map<Key, Value, Compare>::iterator begin(historic_map<Key, Value, Compare>& hm)
 {
     return hm.begin();
 }
@@ -358,7 +358,7 @@ template <class Key,
     class Value,
     class Compare = std::less<Key>
 >
-auto rbegin(const historic_map<Key, Value, Compare>& hm)
+typename historic_map<Key, Value, Compare>::const_reverse_iterator rbegin(const historic_map<Key, Value, Compare>& hm)
 {
     return hm.rbegin();
 }
@@ -366,7 +366,7 @@ template <class Key,
     class Value,
     class Compare = std::less<Key>
 >
-auto crbegin(const historic_map<Key, Value, Compare>& hm)
+typename historic_map<Key, Value, Compare>::const_reverse_iterator crbegin(const historic_map<Key, Value, Compare>& hm)
 {
     return hm.crbegin();
 }
@@ -374,7 +374,7 @@ template <class Key,
     class Value,
     class Compare = std::less<Key>
 >
-auto rbegin(historic_map<Key, Value, Compare>& hm)
+typename historic_map<Key, Value, Compare>::reverse_iterator rbegin(historic_map<Key, Value, Compare>& hm)
 {
     return hm.rbegin();
 }
@@ -382,7 +382,7 @@ template <class Key,
     class Value,
     class Compare = std::less<Key>
 >
-auto end(const historic_map<Key, Value, Compare>& hm)
+typename historic_map<Key, Value, Compare>::const_iterator end(const historic_map<Key, Value, Compare>& hm)
 {
     return hm.end();
 }
@@ -390,7 +390,7 @@ template <class Key,
     class Value,
     class Compare = std::less<Key>
 >
-auto cend(const historic_map<Key, Value, Compare>& hm)
+typename historic_map<Key, Value, Compare>::const_iterator cend(const historic_map<Key, Value, Compare>& hm)
 {
     return hm.cend();
 }
@@ -398,7 +398,7 @@ template <class Key,
     class Value,
     class Compare = std::less<Key>
 >
-auto end(historic_map<Key, Value, Compare>& hm)
+typename historic_map<Key, Value, Compare>::iterator end(historic_map<Key, Value, Compare>& hm)
 {
     return hm.end();
 }
@@ -406,7 +406,7 @@ template <class Key,
     class Value,
     class Compare = std::less<Key>
 >
-auto rend(const historic_map<Key, Value, Compare>& hm)
+typename historic_map<Key, Value, Compare>::const_reverse_iterator rend(const historic_map<Key, Value, Compare>& hm)
 {
     return hm.rend();
 }
@@ -414,7 +414,7 @@ template <class Key,
     class Value,
     class Compare = std::less<Key>
 >
-auto crend(const historic_map<Key, Value, Compare>& hm)
+typename historic_map<Key, Value, Compare>::const_reverse_iterator crend(const historic_map<Key, Value, Compare>& hm)
 {
     return hm.crend();
 }
@@ -422,7 +422,7 @@ template <class Key,
     class Value,
     class Compare = std::less<Key>
 >
-auto rend(historic_map<Key, Value, Compare>& hm)
+typename historic_map<Key, Value, Compare>::reverse_iterator rend(historic_map<Key, Value, Compare>& hm)
 {
     return hm.rend();
 }
