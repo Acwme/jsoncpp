@@ -1097,6 +1097,8 @@ void BuiltStyledStreamWriter::writeIndent() {
 }
 
 void BuiltStyledStreamWriter::writeWithIndent(String const& value) {
+  if (value == "{" || value == "[") //to remove line break after "{" and "["
+    indented_ = true;
   if (!indented_)
     writeIndent();
   *sout_ << value;
